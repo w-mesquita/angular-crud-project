@@ -17,6 +17,12 @@ import { ProductCrudComponent } from './views/product-crud/product-crud.componen
 import { ForDirective } from './directives/for.directive';
 import { ProductCreateComponent } from './components/product/product-create/product-create.component';
 import { MatButtonModule } from '@angular/material/button';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 
 @NgModule({
@@ -38,7 +44,12 @@ import { MatButtonModule } from '@angular/material/button';
     MatSidenavModule,
     MatListModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSnackBarModule,
+    HttpClientModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
