@@ -19,15 +19,11 @@
       "id": 4,
       "name": "Prancha de Surf",
       "price": 1200
-    },
-    {
-      "name": "Test",
-      "price": "1.58",
-      "id": 5
-    },
+    }
+  ],
+  "users": [
     {
       "name": "Wellington Mesquita",
-      "price": "1599.00",
       "id": 6
     }
   ]

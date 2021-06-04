@@ -1,0 +1,28 @@
+.full-width-table {
+  width: 100%;
+}
+
+table .mat-column-price, .mat-column-acoes{
+  justify-content: center;
+  width: 80px;
+}
+
+table .mat-column-id{
+  justify-content: center;
+  width: 200px;
+}
+
+mat-card-header{
+  justify-content: space-between;
+  flex: 1;
+  margin-bottom: 30px;
+}
+
+.cadastro-produto{
+  background-color: #efefef;
+  border-radius: 3px;
+}
+
+.page-header{
+  padding: 10px 30px;
+}
