@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './views/home/home.component';
 import { ProductCreateComponent } from './components/product/modal-product-create/product-create.component'
-import { ProductReadComponent } from './views/product/product-read.component';
+import { ProductListComponent } from './views/product/product-list.component';
 
 const routes: Routes = [
   {
@@ -11,7 +11,7 @@ const routes: Routes = [
     component: HomeComponent
   }, {
     path: 'products',
-    component: ProductReadComponent
+    component: ProductListComponent
   }, {
     path: 'products/create',
     component: ProductCreateComponent
