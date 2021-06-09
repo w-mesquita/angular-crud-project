@@ -18,7 +18,17 @@
     {
       "id": 4,
       "name": "Prancha de Surf",
-      "price": 1200
+      "price": "1500"
+    },
+    {
+      "name": "Violão da hora",
+      "price": "600",
+      "id": 5
+    },
+    {
+      "name": "Produto da horta",
+      "price": "321",
+      "id": 6
     }
   ],
   "users": [
