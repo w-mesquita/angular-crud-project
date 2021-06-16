@@ -1,33 +1,93 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "Caneta BIC Preta",
-      "price": 5.89
+      "name": "Macbook Pro",
+      "price": "12000.85",
+      "id": 1
     },
     {
-      "id": 2,
-      "name": "Notebook Mac Pro",
-      "price": 12000
+      "name": "Iphone XR",
+      "price": "5500",
+      "id": 2
     },
     {
-      "id": 3,
-      "name": "Samsung S20+",
-      "price": 3500
+      "name": "Sangung s20+",
+      "price": "3500",
+      "id": 3
     },
     {
-      "id": 4,
-      "name": "Prancha de Surf",
-      "price": "1500"
+      "name": "Notebook DELL",
+      "price": "4300.55",
+      "id": 4
     },
     {
-      "name": "Violão da hora",
-      "price": "600",
+      "name": "Notebook Asus",
+      "price": "3700",
       "id": 5
     },
     {
-      "name": "Produto da horta",
-      "price": "321",
+      "name": "Iphone 8S",
+      "price": "2500",
+      "id": 6
+    },
+    {
+      "name": "Macbook Pro",
+      "price": "12000.85",
+      "id": 1
+    },
+    {
+      "name": "Iphone XR",
+      "price": "5500",
+      "id": 2
+    },
+    {
+      "name": "Sangung s20+",
+      "price": "3500",
+      "id": 3
+    },
+    {
+      "name": "Notebook DELL",
+      "price": "4300.55",
+      "id": 4
+    },
+    {
+      "name": "Notebook Asus",
+      "price": "3700",
+      "id": 5
+    },
+    {
+      "name": "Iphone 8S",
+      "price": "2500",
+      "id": 6
+    },
+    {
+      "name": "Macbook Pro",
+      "price": "12000.85",
+      "id": 1
+    },
+    {
+      "name": "Iphone XR",
+      "price": "5500",
+      "id": 2
+    },
+    {
+      "name": "Sangung s20+",
+      "price": "3500",
+      "id": 3
+    },
+    {
+      "name": "Notebook DELL",
+      "price": "4300.55",
+      "id": 4
+    },
+    {
+      "name": "Notebook Asus",
+      "price": "3700",
+      "id": 5
+    },
+    {
+      "name": "Iphone 8S",
+      "price": "2500",
       "id": 6
     }
   ],
