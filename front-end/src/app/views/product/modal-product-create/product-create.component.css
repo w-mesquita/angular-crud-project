@@ -1,0 +1,13 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mat-divider{
+    margin-bottom: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}

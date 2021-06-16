@@ -1,0 +1,16 @@
+<div class="custom-modal">
+    <div class="header">
+      <h1 mat-dialog-title>
+        Alerta!
+      </h1>
+      <mat-icon mat-dialog-close="cancel">close</mat-icon>
+    </div>
+    <mat-divider></mat-divider>
+    <div mat-dialog-content>
+      <div [innerHTML]="data.texto"></div>
+    </div>
+    <div class="modal-actions" mat-dialog-actions align="end">
+      <button mat-flat-button mat-dialog-close color="info">{{textCancel}}</button>
+      <button mat-flat-button mat-dialog-close color="warn" (click)="confirm()">{{textOk}}</button>
+    </div>
+  </div>

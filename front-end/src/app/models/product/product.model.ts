@@ -1,5 +1,9 @@
 export interface Product {
     id?: number 
     name: string
-    price: any // VERIFICAR NÃO ACEITAR DEIXAR COMO NUMBER E SETAR NULL
+    price: number 
 }
+
+export interface ProductDeleteRequest {
+    id: any; // NÃO ACEITA O TIPO NUMBER VERIFICAR
+  }

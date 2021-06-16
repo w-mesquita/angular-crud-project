@@ -12,7 +12,6 @@ import { Product } from '../../../models/product/product.model';
 })
 export class ProductCreateComponent implements OnInit {
 
-  isLoading: boolean = false;
   product!: Product;
   productForm!: FormGroup;
 
@@ -28,7 +27,7 @@ export class ProductCreateComponent implements OnInit {
   ngOnInit(): void {
     this.productForm = this.fb.group({
       name: ['', Validators.compose([Validators.required, Validators.minLength(3)])],
-      price: ['', Validators.compose([Validators.required, Validators.minLength(3)])]
+      price: ['', Validators.compose([Validators.required, Validators.minLength(1)])]
     });
 
     this.loadProduct()
@@ -54,12 +53,12 @@ export class ProductCreateComponent implements OnInit {
       (response) => {
         if (response) {
           this.dialogRef.close('ok');
-          return this.productService.showMessage('Produto criado com sucesso!')
+          return this.productService.showMessage('Produto criado com sucesso!', 'OK', 5000, 'success-snackbar')
         }
       },
       (error: HttpErrorResponse) => {
         console.error(error);
-        this.productService.showMessage('Erro ao cadastrar produto!')
+        this.productService.showMessage('Erro ao cadastrar produto!', 'OK', 5000, 'danger-snackbar')
       }
     )}
 
@@ -70,12 +69,12 @@ export class ProductCreateComponent implements OnInit {
       (response) => {
         if (response) {
           this.dialogRef.close('ok');
-          return this.productService.showMessage('Produto editado com sucesso!')
+          return this.productService.showMessage('Produto editado com sucesso!', 'OK', 5000, 'success-snackbar')
         }
       },
       (error: HttpErrorResponse) => {
         console.error(error);
-        this.productService.showMessage('Erro ao editar produto!')
+        this.productService.showMessage('Erro ao editar produto!', 'OK', 5000, 'danger-snackbar')
       }
     )}
 

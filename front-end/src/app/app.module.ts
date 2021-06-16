@@ -14,7 +14,7 @@ import { MatListModule } from '@angular/material/list';
 import { HomeComponent } from './views/home/home.component';
 import { MatCardModule } from '@angular/material/card';
 import { ForDirective } from './directives/for.directive';
-import { ProductCreateComponent } from './components/product/modal-product-create/product-create.component';
+import { ProductCreateComponent } from './views/product/modal-product-create/product-create.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 
@@ -33,6 +33,8 @@ import { ProductListComponent } from './views/product/product-list.component';
 
 import  localePt  from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
+import { ModalConfirmacaoComponent } from './components/shared/modal-confirmacao/modal-confirmacao.component';
+import { ClientComponent } from './views/client/client.component';
 
 registerLocaleData(localePt);
 
@@ -45,7 +47,9 @@ registerLocaleData(localePt);
     HomeComponent,
     ForDirective,
     ProductCreateComponent,
-    ProductListComponent
+    ProductListComponent,
+    ModalConfirmacaoComponent,
+    ClientComponent
   ],
   imports: [
     BrowserModule,

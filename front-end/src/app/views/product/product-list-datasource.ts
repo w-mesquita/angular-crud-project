@@ -5,7 +5,6 @@ import { map } from 'rxjs/operators';
 import { Observable, of as observableOf, merge } from 'rxjs';
 import { Product } from 'src/app/models/product/product.model';
 
-
 // TODO: replace this with real data from your application
 const products: Product[] = [];
 
@@ -60,7 +59,7 @@ export class ProductListDataSource extends DataSource<Product> {
     }
   }
 
-  /**
+  /*
    * Sort the data (client-side). If you're using server-side sorting,
    * this would be replaced by requesting the appropriate data from the server.
    */

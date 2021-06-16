@@ -7,6 +7,15 @@ body {
     background-color: #fafafa;
 }
 
+:root {
+    --primary: #1266F1;
+    --danger: #F93154;
+    --success: #00B74A;
+    --warning: #FFA900;
+    --light: #FBFBFB;
+    --dark: #262626;
+  }
+
 .red{
     color: #FF2C59;
 }
@@ -14,3 +23,32 @@ body {
 .v-middle{
     vertical-align: middle;
 }
+
+/* ------- SNACKBARS ------- */
+.default-snackbar{
+    background: var(--primary);
+}
+.default-snackbar .mat-simple-snackbar-action {
+    color: #fff !important;
+  }
+  
+  .danger-snackbar{
+    background: var(--danger);
+  }
+  .danger-snackbar .mat-simple-snackbar-action {
+    color: #fff !important;
+  }
+  
+  .success-snackbar{
+    background: var(--success);
+  }
+  .success-snackbar .mat-simple-snackbar-action {
+    color: #fff !important;
+  }
+  
+  .warning-snackbar{
+    background: var(--warning);
+  }
+  .warning-snackbar .mat-simple-snackbar-action {
+    color: #000 !important;
+  }

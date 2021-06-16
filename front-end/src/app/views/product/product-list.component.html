@@ -3,7 +3,7 @@
     <h1>Cadastro de produtos</h1>
   </div>
   <mat-card class="home mat-elevation-z0">
-    <mat-card-header>
+   <mat-card-header>
       <mat-card-title>
         <div>
           Produtos
@@ -30,7 +30,7 @@
                 <mat-icon>edit</mat-icon>
                 <span>Editar</span>
               </button>
-              <button mat-menu-item>
+              <button mat-menu-item (click)="openModalDeleteProduct(element)">
                 <mat-icon>delete</mat-icon>
                 <span>Deletar</span>
               </button>
@@ -59,7 +59,7 @@
         <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
       </table>
 
-      <mat-paginator #paginator [length]="dataSource?.data?.length" [pageIndex]="0" [pageSize]="10"
+      <mat-paginator #paginator [length]="dataSource?.data?.length" [pageIndex]="0" [pageSize]="5"
         [pageSizeOptions]="[5, 10, 20]">
       </mat-paginator>
     </mat-card-content>

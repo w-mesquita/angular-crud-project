@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Observable } from 'rxjs';
-import { Product } from '../../models/product/product.model';
+import { Product, ProductDeleteRequest } from '../../models/product/product.model';
 
 @Injectable({
   providedIn: 'root'
@@ -16,11 +16,15 @@ export class ProductService {
     private http: HttpClient
     ) { }
 
-  showMessage(msg: string): void {
-    this.snackBar.open(msg, 'X', {
-      duration: 3000,
-      horizontalPosition: 'center',
-      verticalPosition: 'bottom'
+  showMessage(
+    message: string,
+    action: string,
+    duration: number,
+    panelClass = 'default-snackbar'
+  ): any {
+    this.snackBar.open(message, action, {
+      duration,
+      panelClass
     })
   }
 
@@ -32,12 +36,16 @@ export class ProductService {
     return this.http.get<Product[]>(this.baseUrl)
   }
 
-  readById(id: string): Observable<Product>{
-    return this.http.get<Product>(`${this.baseUrl}/${id}`)
-  }
+  // readById(id: string): Observable<Product>{
+  //   return this.http.get<Product>(`${this.baseUrl}/${id}`)
+  // }
 
   update(product: Product): Observable<Product>{
     return this.http.put<Product>(`${this.baseUrl}/${product.id}`, product)
+  }
+
+  delete(obj: ProductDeleteRequest): Observable<boolean>{
+    return this.http.delete<boolean>(`${this.baseUrl}/${obj.id}`)
   }
 }
 
