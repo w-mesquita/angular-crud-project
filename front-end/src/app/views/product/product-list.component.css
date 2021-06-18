@@ -23,6 +23,6 @@ mat-card-header{
   border-radius: 3px;
 }
 
-.page-header{
-  padding: 10px 30px;
+.cadastro-produto h3{
+  margin: 0;
 }
