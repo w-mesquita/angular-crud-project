@@ -12,14 +12,7 @@ table .mat-column-id{
   width: 200px;
 }
 
-mat-card-header{
-  justify-content: space-between;
-  flex: 1;
-  margin-bottom: 30px;
-}
-
 .cadastro-produto{
-  background-color: #efefef;
   border-radius: 3px;
 }
 

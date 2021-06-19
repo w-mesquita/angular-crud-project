@@ -1,0 +1,18 @@
+.full-width-table {
+  width: 100%;
+}
+
+table .mat-column-id,
+.mat-column-acoes {
+  justify-content: center;
+  width: 80px;
+}
+
+
+.cadastro-cliente {
+  border-radius: 3px;
+}
+
+.cadastro-cliente h3 {
+  margin: 0;
+}
